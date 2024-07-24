@@ -1,0 +1,75 @@
+.Form {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerAlignitens {
+  width: 40%;
+  height: 50%;
+
+  color: rgb(64, 50, 77);
+
+  font-weight: 800;
+}
+
+.containerAlignitens input {
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  border-radius: 5px;
+  border: 2px solid rgb(228, 225, 225);
+
+  color: rgb(0, 0, 0);
+}
+
+.containerAlignitens input::placeholder {
+  color: rgb(204, 203, 204);
+
+  font-size: 1.2rem;
+}
+
+.DateAndCvcInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DateAndCvcInput input::placeholder {
+  display: flex;
+  text-align: center;
+}
+
+.inptdate {
+  display: flex;
+  width: 70%;
+
+  gap: 3rem;
+}
+
+.submitt input {
+  padding: 1.1rem;
+
+  font-size: 1.5rem;
+
+  background-color: rgb(50, 8, 91);
+  color: white;
+  
+  border: 3px solid rgb(50, 8, 91);
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.submitt input:hover {
+  background-color: rgb(99, 6, 192);
+  border: 3px solid rgb(99, 6, 192);
+}

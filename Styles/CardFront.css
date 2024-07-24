@@ -1,0 +1,91 @@
+.cards {
+  width: auto;
+  height: auto;
+
+  position: relative;
+
+  margin-left: 15%;
+  margin-top: 7%;
+}
+
+.CardFront {
+  width: auto;
+  height: auto;
+}
+
+.Background {
+  width: 23vw;
+  min-width: 28rem;
+  height: 11vw;
+  min-height: 14rem;
+
+  border-radius: 15px;
+
+  background-image: url(/Assets/images/bg-card-front.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 6%;
+}
+
+.Circles {
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.circleOne {
+  border: 2px solid white;
+  border-radius: 100%;
+
+  background-color: white;
+
+  width: 11%;
+  height: 50%;
+}
+
+.circleTwo {
+  border: 2px solid white;
+  border-radius: 100%;
+
+  width: 5%;
+  height: 25%;
+}
+
+
+.textsinfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: end;
+
+  gap: 30px;
+
+  width: 100%;
+  height: 50%;
+
+  color: white;
+}
+
+.AlignNameAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AlignNameAndDate p {
+  text-transform: uppercase;
+  font-size: 1.5vh;
+
+  margin-right: 3px;
+}
+
+.NumbersFront p {
+  font-size: 1.6vw;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}

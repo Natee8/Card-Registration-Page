@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Card</title>
+  <link rel="icon" href="./Assets/images/favicon-32x32.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./Assets/GlobalCSS/Reset.css">
+  <link rel="stylesheet" href="./Styles/background.css">
+  <link rel="stylesheet" href="./Styles/CardFront.css">
+  <link rel="stylesheet" href="./Styles/CardBack.css">
+  <link rel="stylesheet" href="./Styles/Form.css">
+  <link rel="stylesheet" href="./Styles/Animations.css">
+  <link rel="stylesheet" href="./Styles/Thanks.css">
+  <link rel="stylesheet" href="./Styles/MobileQuerys.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="background"></div>
+    <div class="cards">
+      <div class="positionCardsMobile">
+        <div class="CardFront">
+          <div class="Background">
+            <div class="Circles">
+              <div class="circleOne"></div>
+              <div class="circleTwo"></div>
+            </div>
+            <div class="textsinfo">
+              <div class="NumbersFront">
+                <p name="RealTime">0000 0000 0000 0000</p>
+              </div>
+              <div class="AlignNameAndDate">
+                <p name="RealTime">Jane Appleseed</p>
+                <div style="display: flex;">
+                  <p name="RealTime">00</p>
+                  <p>/</p>
+                  <p name="RealTime">00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBack">
+          <div class="backgroundBack">
+            <div class="containerCVC">
+              <p name="RealTime">000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="Form" id="Form">
+      <div class="containerAlignitens">
+        <div class="span-required">
+          <p>CARDHOLDER NAME</p>
+          <input class="Required" type="text" maxlength="35" placeholder="e.x.Jane Appleseed" onblur="NameValidate()">
+        </div>
+        <div class="span-required">
+          <p>CARD NUMBER</p>
+          <input class="Required" type="text" maxlength="16" placeholder="e.x. 1234 5678 9123 0000"
+            onblur="CardValidate()">
+        </div>
+        <div class="DateAndCvcInput">
+          <div>
+            <p>EXP.DATE(MM/YY)</p>
+            <div class="inptdate">
+              <div class="span-required">
+                <input class="Required" type="text" maxlength="2" placeholder="MM" onblur="DateMMValidate()">
+              </div>
+              <div class="span-required">
+                <input class="Required" type="text" maxlength="2" placeholder="YY" onblur="DateYYValidate()">
+              </div>
+            </div>
+          </div>
+          <div class="span-required">
+            <p>CVC</p>
+            <input class="Required" type="text" maxlength="3" placeholder="e.x. 123" onblur="CVC()">
+          </div>
+        </div>
+        <div class="submitt">
+          <input type="submit" value="Confirm" onclick="submitt()">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/Js/Script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.SetBorderError {
+  border: 2px solid rgb(255, 78, 78) !important;
+}
+
+.span-required span {
+  font-weight: lighter;
+  color: red;
+  
+  transition: 0.4s;
+}
+
+.span-required {
+  margin-bottom: 1rem;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.Hidden {
+  opacity: 0;
+}

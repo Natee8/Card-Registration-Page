@@ -1,0 +1,20 @@
+main {
+  display: flex;
+}
+
+body,
+html,
+main {
+  height: 100%;
+}
+
+.background {
+  width: 35%;
+  height: 100%;
+
+  background-image: url(/Assets/images/bg-main-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+}
